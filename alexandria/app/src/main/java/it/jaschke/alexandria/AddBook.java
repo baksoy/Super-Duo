@@ -106,7 +106,8 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
                     getActivity().startService(bookIntent);
                     AddBook.this.restartLoader();
                 } else {
-                    Toast.makeText(getActivity(), "Internet Connection not Available", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "No network connection. " +
+                            "Please try again when you are connected to the network.", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -237,8 +238,7 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
 
     public boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+        NetworkInfo info = connectivityManager.getActiveNetworkInfo();
+        return info != null && info.isConnected();
     }
-
 }

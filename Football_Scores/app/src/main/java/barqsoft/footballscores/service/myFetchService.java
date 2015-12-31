@@ -31,18 +31,16 @@ import barqsoft.footballscores.R;
 public class myFetchService extends IntentService
 {
     public static final String LOG_TAG = "myFetchService";
+
     public myFetchService()
     {
         super("myFetchService");
     }
 
     @Override
-    protected void onHandleIntent(Intent intent)
-    {
+    protected void onHandleIntent(Intent intent) {
         getData("n2");
         getData("p2");
-
-        return;
     }
 
     private void getData (String timeFrame)
@@ -55,20 +53,20 @@ public class myFetchService extends IntentService
         Uri fetch_build = Uri.parse(BASE_URL).buildUpon().
                 appendQueryParameter(QUERY_TIME_FRAME, timeFrame).build();
         //Log.v(LOG_TAG, "The url we are looking at is: "+fetch_build.toString()); //log spam
-        HttpURLConnection m_connection = null;
+        HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
         String JSON_data = null;
         //Opening Connection
         try {
             URL fetch = new URL(fetch_build.toString());
-            m_connection = (HttpURLConnection) fetch.openConnection();
-            m_connection.setRequestMethod("GET");
-            m_connection.addRequestProperty("X-Auth-Token",getString(R.string.api_key));
-            m_connection.connect();
+            urlConnection = (HttpURLConnection) fetch.openConnection();
+            urlConnection.setRequestMethod("GET");
+            urlConnection.addRequestProperty("X-Auth-Token", getString(R.string.api_key));
+            urlConnection.connect();
 
             // Read the input stream into a String
-            InputStream inputStream = m_connection.getInputStream();
-            StringBuffer buffer = new StringBuffer();
+            InputStream inputStream = urlConnection.getInputStream();
+            StringBuilder stringBuilder = new StringBuilder();
             if (inputStream == null) {
                 // Nothing to do.
                 return;
@@ -80,22 +78,22 @@ public class myFetchService extends IntentService
                 // Since it's JSON, adding a newline isn't necessary (it won't affect parsing)
                 // But it does make debugging a *lot* easier if you print out the completed
                 // buffer for debugging.
-                buffer.append(line + "\n");
+                stringBuilder.append(line).append("\n");
             }
-            if (buffer.length() == 0) {
+            if (stringBuilder.length() == 0) {
                 // Stream was empty.  No point in parsing.
                 return;
             }
-            JSON_data = buffer.toString();
+            JSON_data = stringBuilder.toString();
         }
         catch (Exception e)
         {
             Log.e(LOG_TAG,"Exception here" + e.getMessage());
         }
         finally {
-            if(m_connection != null)
+            if(urlConnection != null)
             {
-                m_connection.disconnect();
+                urlConnection.disconnect();
             }
             if (reader != null)
             {
@@ -180,7 +178,7 @@ public class myFetchService extends IntentService
 
 
             //ContentValues to be inserted
-            Vector<ContentValues> values = new Vector <ContentValues> (matches.length());
+            Vector<ContentValues> values = new Vector<>(matches.length());
             for(int i = 0;i < matches.length();i++)
             {
 
@@ -193,9 +191,12 @@ public class myFetchService extends IntentService
                 // If you are finding no data in the app, check that this contains all the leagues.
                 // If it doesn't, that can cause an empty DB, bypassing the dummy data routine.
                 if(     League.equals(PREMIER_LEAGUE)      ||
+                        League.equals(PRIMERA_LIGA)        ||
                         League.equals(SERIE_A)             ||
                         League.equals(BUNDESLIGA1)         ||
                         League.equals(BUNDESLIGA2)         ||
+                        League.equals(LIGUE1)              ||
+                        League.equals(EREDIVISIE)          ||
                         League.equals(PRIMERA_DIVISION)     )
                 {
                     match_id = match_data.getJSONObject(LINKS).getJSONObject(SELF).

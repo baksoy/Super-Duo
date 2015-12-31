@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/widget_item_league"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="Roboto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#212121"
+        tools:text="Football League" />
+
+    <TextView
+        android:id="@+id/widget_item_matchday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@mipmap/match_day"
+        android:drawableStart="@mipmap/match_day"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#727272"
+        tools:text="Match day: 1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/widget_item_home_crest"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/crest_of_home_team"
+                tools:src="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/widget_item_home_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="Roboto"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#212121"
+                tools:text="Liverpool" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/widget_item_score"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#f4a734"
+                android:textSize="32sp"
+                tools:text="3 - 0" />
+
+            <TextView
+                android:id="@+id/widget_item_matchtime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#9e9c99"
+                android:textSize="16sp"
+                tools:text="Match Time" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/widget_item_away_crest"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/crest_of_away_team"
+                tools:src="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/widget_item_away_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="Roboto"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#212121"
+                tools:text="Manchester United" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
