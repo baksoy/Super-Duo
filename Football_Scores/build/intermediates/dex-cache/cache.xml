@@ -2,53 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/beraaksoy/Desktop/Football_Scores_WORKING_CLEANED_UP_SANDBOX/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/Users/beraaksoy/Desktop/Football_Scores_WORKING_CLEANED_UP_SANDBOX/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_65d7ec8e0cc60b15244a01df20126534080d7765.jar" />
-    </item>
-    <item
-        jar="/Users/beraaksoy/Desktop/Football_Scores_WORKING_CLEANED_UP_SANDBOX/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/Users/beraaksoy/Desktop/Football_Scores_WORKING_CLEANED_UP_SANDBOX/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_f3d93f07bbe6e6d72f33fb4dd28cbe6e7226362b.jar" />
-    </item>
-    <item
-        jar="/Users/beraaksoy/Desktop/Football_Scores_WORKING_CLEANED_UP_SANDBOX/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="/Users/beraaksoy/Desktop/Football_Scores_WORKING_CLEANED_UP_SANDBOX/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_296db2da81a5d63fb159d62d3d6f0aaefcdfe12a.jar" />
-    </item>
-    <item
-        jar="/Users/beraaksoy/Desktop/Super-Duo/Football_Scores/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/Users/beraaksoy/Desktop/Super-Duo/Football_Scores/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_35b6e9daa101c62582b2fef147780b1c041afed9.jar" />
-    </item>
-    <item
-        jar="/Users/beraaksoy/Desktop/Super-Duo/Football_Scores/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="/Users/beraaksoy/Desktop/Super-Duo/Football_Scores/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_8f37f096c1da328b1d0390696954a7f91ab33de1.jar" />
-    </item>
-    <item
         jar="/Users/beraaksoy/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/Users/beraaksoy/Desktop/Football_Scores_WORKING_CLEANED_UP_SANDBOX/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_97c22bb5536d4d40531d4e560cd2561cf2a28f38.jar" />
+        <dex dex="/Users/beraaksoy/Documents/Training/Android-Udacity/Super-Duo/Football_Scores/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_97c22bb5536d4d40531d4e560cd2561cf2a28f38.jar" />
     </item>
     <item
-        jar="/Users/beraaksoy/Desktop/Super-Duo/Football_Scores/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jar="/Users/beraaksoy/Documents/Training/Android-Udacity/Super-Duo/Football_Scores/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/beraaksoy/Documents/Training/Android-Udacity/Super-Duo/Football_Scores/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_b454cae865d6c4c66a8d49db42085ade61981bd9.jar" />
+    </item>
+    <item
+        jar="/Users/beraaksoy/Documents/Training/Android-Udacity/Super-Duo/Football_Scores/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/Users/beraaksoy/Desktop/Super-Duo/Football_Scores/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_9291afbb73f50035f6dcb8c70eae09360d028b2e.jar" />
+        <dex dex="/Users/beraaksoy/Documents/Training/Android-Udacity/Super-Duo/Football_Scores/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_92791d3723390173b25e30c2cfe3d64196df1811.jar" />
+    </item>
+    <item
+        jar="/Users/beraaksoy/Documents/Training/Android-Udacity/Super-Duo/Football_Scores/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/beraaksoy/Documents/Training/Android-Udacity/Super-Duo/Football_Scores/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_c0cdf565dbee02d2f7c5c12be9ccda0f3e9be25f.jar" />
     </item>
 
 </items>

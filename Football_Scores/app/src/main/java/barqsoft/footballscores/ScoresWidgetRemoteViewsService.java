@@ -95,8 +95,7 @@ public class ScoresWidgetRemoteViewsService extends RemoteViewsService {
                 }
                 final RemoteViews views = new RemoteViews(getPackageName(), R.layout.scores_list_widget_item);
 
-                String league = Utilities.getLeague(mCursor.getInt(QueryParam.LEAGUE));
-
+                String league = getString(Utilities.getLeague(mCursor.getInt(QueryParam.LEAGUE)));
 
                 String matchDay = getString(R.string.match_day, mCursor.getString(QueryParam.MATCH_DAY));
                 String matchTime = mCursor.getString(QueryParam.MATCH_TIME);
@@ -119,7 +118,7 @@ public class ScoresWidgetRemoteViewsService extends RemoteViewsService {
                 views.setContentDescription(R.id.widget_item_away_crest, awayTeamName);
                 views.setContentDescription(R.id.widget_item_home_name, homeTeamName);
                 views.setContentDescription(R.id.widget_item_away_name, awayTeamName);
-                views.setContentDescription(R.id.widget_item_league, league);
+                views.setTextViewText(R.id.widget_item_league, league);
                 views.setContentDescription(R.id.widget_item_matchday, matchDay);
                 views.setContentDescription(R.id.widget_item_score, score);
 

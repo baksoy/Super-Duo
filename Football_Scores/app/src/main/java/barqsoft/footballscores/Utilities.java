@@ -17,34 +17,34 @@ public class Utilities {
     public static final int BUNDESLIGA3 = 403;
     public static final int EREDIVISIE = 404;
 
-    public static String getLeague(int league_num) {
+    public static int getLeague(int league_num) {
         switch (league_num) {
             case SERIE_A:
-                return "Seria A";
+                return R.string.seria_a;
             case PREMIER_LEAGUE:
-                return "Premier League";
+                return R.string.premier_league;
             case CHAMPIONS_LEAGUE:
-                return "UEFA Champions League";
+                return R.string.uefa_champions_league;
             case PRIMERA_DIVISION:
-                return "Primera Division";
+                return R.string.primera_division;
             case BUNDESLIGA1:
-                return "Bundesliga 1";
+                return R.string.bundesliga_1;
             case BUNDESLIGA2:
-                return "Bundesliga 2";
+                return R.string.bundesliga_2;
             case BUNDESLIGA3:
-                return "Bundesliga 3";
+                return R.string.bundesliga_3;
             case LIGUE1:
-                return "Ligue 1";
+                return R.string.ligue_1;
             case LIGUE2:
-                return "Ligue 2";
+                return R.string.ligue_2;
             case SEGUNDA_DIVISION:
-                return "Segunda Division";
+                return R.string.segunda_dision;
             case PRIMEIRA_LIGA:
-                return "Primeira Liga";
+                return R.string.primeira_lig;
             case EREDIVISIE:
-                return "Eredivisie";
+                return R.string.eredivisie;
             default:
-                return "Unknown League. Please report.";
+                return R.string.unknown_league;
         }
     }
 
@@ -98,6 +98,10 @@ public class Utilities {
                 return R.mipmap.real_betis;
             case "Getafe CF":
                 return R.mipmap.getafe_cf_logo;
+            case "Villarreal CF":
+                return R.mipmap.villarreal_cf_logo;
+            case "Valencia CF":
+                return R.mipmap.valencia_cf_logo;
             case "RC Deportivo La Coruna":
                 return R.mipmap.rc_deportivo_la_coruna_logo;
             case "RCD Espanyol":
